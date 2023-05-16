@@ -8,7 +8,7 @@ function Home() {
     const [memesData, setMemesData] = useState([])
 
     const getAllMemes = () => {
-        const serverURL = `http://localhost:3003/allMemes`;
+        const serverURL = `${process.env.REACT_APP_serverURL}/allMemes`;
 
         // using axios
         // axios.get(serverURL)
